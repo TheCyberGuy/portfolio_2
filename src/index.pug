@@ -1,0 +1,40 @@
+doctype html
+html(lang="hu")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Sas Csanád
+
+        //- bootstrap
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css")
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js") 
+
+        link(rel="stylesheet", href="./css/index.css")
+
+    body
+        .container-fluid.d-flex.flex-column.justify-content-evenly#landingWrapper
+            nav.navbar.navbar-expand-lg.bg-transparent.fixed-top.navbar-dark.pt-0
+                .container-fluid
+                    a.navbar-brand(href='#') Navbar
+                    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                        span.navbar-toggler-icon
+                    #navbarNav.collapse.navbar-collapse.d-lg-flex.flex-row.justify-content-end
+                        ul.navbar-nav
+                            li.nav-item.me-3
+                                a.nav-link.active(aria-current='page' href='#') Home
+                            li.nav-item.me-3
+                                a.nav-link.active(href='#') Features
+                            li.nav-item.me-3
+                                a.nav-link.active(href='#') Pricing
+                            li.nav-item.me-3
+                                a.nav-link.active disabled
+            .container.d-flex.flex-column#introduction
+                p.h4.text-center Hello
+                p.h2.text-center I'M SAS CSANÁD
+                p.h3.text-center A Freelance 
+                    span#webdeveloper Web Developer
+                button.text-center.mt-1(type='submit') Vegye fel velem a kapcsolatot!
+        .container-fluid.d-flex.flex-column#about
+            .container-fluid
+                p.h1#aboutMe Rólam
